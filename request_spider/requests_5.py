@@ -110,7 +110,7 @@ def main():
     else:
 
         book_links = get_text_and_link_absolute(base_url,base_req,'book_link','book_name',items)
-        print(book_links)
+        
         # 从书名的列表逐一获取出每一本书的书名和书的链接
         for item in book_links:
             # 第二次获取书的章节名和小说的正文链接
