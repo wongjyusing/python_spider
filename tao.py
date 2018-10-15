@@ -46,9 +46,7 @@ def main():
 
     js = json.loads(items_list[:-1])
     jd = js['mods']['itemlist']['data']['auctions'] #.keys())
-    #
     df = pandas.DataFrame(jd)
-    #
     df[['category','raw_title','view_price','item_loc','view_sales']].to_html(f'{commodity}.html')
 
 
